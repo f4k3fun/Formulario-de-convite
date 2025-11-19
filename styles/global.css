@@ -33,7 +33,7 @@
   
 
   --text-body: #C8CDD0;
-  --text-heding: #F9F9F9;
+  --text-heading: #F9F9F9;
 
   --font-Leckerli: "Leckerli One", sans-serif;
   --font-baloo: "Baloo 2", sans-serif;
@@ -49,3 +49,7 @@
   --b-xs: 600 .75rem var(--font-open);
 }
 
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
