@@ -1,0 +1,55 @@
+.participation {
+  display: grid;
+  grid-auto-flow: column;
+  background-color: var(--input-base);
+  gap: .25rem;
+  padding: .25rem;
+  border-radius: .5rem;
+
+  
+
+  
+
+  & .select {
+    padding: .25rem;
+    height: 2.5rem;
+    border-radius: .25rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+
+    &:has(input:checked){
+    background-color: var(--shape-button);
+
+    & svg path {
+        stroke: var(--brand-light);
+      }
+
+    & span {
+      font-weight: 600;
+    }
+
+    
+    }
+
+    & input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+    }
+
+     & svg path {
+      stroke: var(--input-placeholder);
+     }
+
+  
+
+    & span {
+      font: var(--b-sm);
+      font-weight: 400;
+      color: var(--text-heading);
+    }
+  }
+}

@@ -1,0 +1,36 @@
+
+
+.colors {
+  
+  & .bg-color {
+    background-color: var(--shape-button);
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid .125rem transparent;
+
+    &:has(input:focus), &:has(input:checked) {
+      border-color: var(--brand-light);
+    }
+
+
+
+    & input {
+      all: unset;
+      position: absolute;
+      inset: 0;
+      z-index: 20;
+    }
+
+    & .color {
+      width: 1.75rem;
+      height: 1.75rem;
+      position: absolute;
+      border-radius: 50%;
+    }
+  }
+}

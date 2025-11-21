@@ -1,17 +1,27 @@
+body{
+  display: flex;
+  height: 100vh;
+  background-color: var(--shape-background);
+  justify-content: center;
+  padding: 1.25rem;
+}
 #app {
   display: grid;
   grid-template-columns: 25rem  55rem;
-  height: 100vh;
-  background-color: var(--shape-background);
-  padding: 1.25rem;
   gap: 1.25rem;
-  justify-content: center;
+  overflow: hidden;
+  border-radius: .75rem;
+
+
+
+
 
   & aside {
     background-color: blue;
     background: url(../assets/Background.png) no-repeat center/cover;
     padding: 2rem;
     border-radius: .75rem;
+    max-height: 95vh;
 
     & header {
       display: grid;
@@ -46,14 +56,16 @@
     background-color: var(--shape-body);
     padding-block: 5rem;
     border-radius: .75rem;
+    overflow: auto;
 
     & .content {
      width: 35rem;
      margin-inline: auto;
      display: grid;
-      gap: 2.5rem;
+     gap: 2.5rem;
+     overflow: auto;
 
-      h2 {
+     & h2 {
         font: var(--h-md);
         color: var(--text-heading);
       }

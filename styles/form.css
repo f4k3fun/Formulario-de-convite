@@ -1,0 +1,46 @@
+form {
+
+  & fieldset + fieldset {
+      margin-top: 3rem;
+    }
+
+  
+  & fieldset {
+    border: none;
+
+    
+
+    & legend {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      font: var(--h-sm);
+      color: var(--text-heading);
+
+      & img {
+        width: 1.5rem;
+        height: 1.5rem;
+        object-fit: cover;
+      }
+    }
+
+    & legend + .input-wrapper {
+      margin-top: 1.5rem;
+    }
+
+    .input-wrapper{
+      display: grid;
+      gap: .75rem;
+
+      & label{
+        color: var(--text-body);
+        font: var(--b-sm);
+        font-weight: 400;
+      }
+    }
+
+    & div + div:has(.input-wrapper) {
+      margin-top: 1rem;
+    }
+  }
+}

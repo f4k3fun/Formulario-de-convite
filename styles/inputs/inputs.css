@@ -1,0 +1,28 @@
+input[type="text"],
+input[type="datetime-local"]{
+  background-color: var(--input-base);
+  border: 1px solid var(--input-stroke);
+  border-radius: .5rem;
+  height: 3rem;
+  padding-inline: 1rem;
+  color: white;
+  outline: none;
+
+  &::placeholder{
+    color: var(--input-placeholder);
+    font: var(--b-md);
+    font-weight: 400;
+  }
+
+}
+
+input:focus {
+  border-color: var(--brand-light);
+}
+
+input[required]{
+
+  &:not(:focus):invalid{
+    border-color: var(--danger);
+  }
+}

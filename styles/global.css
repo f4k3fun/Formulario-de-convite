@@ -53,3 +53,67 @@ img {
   max-width: 100%;
   max-height: 100%;
 }
+
+.mg-top {
+  margin-top: 1rem;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-2-columns {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-auto-column{
+  grid-auto-flow: column;
+}
+
+.gap-16 {
+  gap: 1rem;
+}
+
+.brand-light {
+  background-color: var(--brand-light);
+}
+
+.brand-mid {
+  background-color: var(--brand-mid);
+}
+
+.purple {
+  background-color: var(--purple);
+}
+
+.fushia {
+  background-color: var(--fuschia);
+}
+
+.danger {
+  background-color: var(--danger);
+}
+
+.pink {
+  background-color: var(--pink);
+}
+
+.orange {
+  background-color: var(--orange);
+}
+
+.yellow {
+  background-color: var(--yellow);
+}
+
+.lime {
+  background-color: var(--lime);
+}
+
+.green {
+  background-color: var(--green);
+}
+
+.cyan {
+  background-color: var(--cyan);
+}
