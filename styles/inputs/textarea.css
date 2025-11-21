@@ -6,6 +6,7 @@ textarea{
   padding: 1rem;
   outline: none;
   resize: none;
+  color: white;
 
   &:focus {
       border-color: var(--brand-light);

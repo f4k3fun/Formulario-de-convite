@@ -58,9 +58,15 @@ img {
   margin-top: 1rem;
 }
 
+.mg-top-28 {
+  margin-top: 1.75rem;
+}
+
+
 .grid {
   display: grid;
 }
+
 
 .grid-2-columns {
   grid-template-columns: repeat(2, 1fr);
@@ -116,4 +122,17 @@ img {
 
 .cyan {
   background-color: var(--cyan);
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  opacity: 0;
+
+  & span {
+    color: var(--b-xs);
+    font-weight: 400;
+    color: var(--danger);
+  }
 }

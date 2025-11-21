@@ -13,6 +13,11 @@
     align-items: center;
     border: solid .125rem transparent;
 
+
+    &:hover {
+      background-color: var(--shape-hover);
+    }
+
     &:has(input:focus), &:has(input:checked) {
       border-color: var(--brand-light);
     }

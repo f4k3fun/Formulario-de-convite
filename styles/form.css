@@ -42,5 +42,28 @@ form {
     & div + div:has(.input-wrapper) {
       margin-top: 1rem;
     }
+
+    & .input-wrapper:has(input:required:invalid){
+      .error {
+        opacity: 100%;
+      }
+    }
+  }
+
+  button {
+    outline: none;
+    border: none;
+    background-color: var(--brand-dark);
+    padding: .25rem 1.25rem;
+    display: flex;
+    align-items: center;
+    border-radius: .5rem;
+    gap: .75rem;
+    height: 3rem;
+    
+    font: var(--b-md);
+    color: var(--text-heading);
+    margin-left: auto;
+    margin-top: 3rem;
   }
 }

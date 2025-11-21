@@ -1,5 +1,6 @@
 input[type="text"],
-input[type="datetime-local"]{
+input[type="datetime-local"],
+input[type="email"]{
   background-color: var(--input-base);
   border: 1px solid var(--input-stroke);
   border-radius: .5rem;

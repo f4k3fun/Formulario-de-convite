@@ -28,7 +28,7 @@
     <main>
       <div class="content">
       <h2>Crie seu convite</h2>
-      <form>
+      <form method="post" enctype="multipart/form-data">
         <fieldset id="data-event">
           
             
@@ -36,7 +36,7 @@
 
             <div class="input-wrapper">
               <label for="event">Titulo</label>
-              <input type="text" name="event" id="event">
+              <input type="text" name="event" id="event" placeholder="Nome do evento">
             </div>
 
             <div class="grid grid-2-columns gap-16">
@@ -90,7 +90,7 @@
 
             <div class="input-wrapper mg-top">
               <label for="description">Descrição</label>
-              <textarea name="description" id="description" rows="10" placeholder="Escreva sobre os detalhes do evento"></textarea>
+              <textarea name="description" id="description" rows="10" placeholder="Escreva sobre os detalhes do evento" required></textarea>
             </div>
           
         </fieldset>
@@ -157,7 +157,173 @@
               </div>
             </div>
           </div>
+
+          <div class="input-wrapper mg-top-28">
+            <label >Tema do evento</label>
+            
+            <div class="theme-event grid">
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="aniversario">
+                <img src="assets/themes/Image.png" alt="imagem de bolo">
+                <span>Aniversario</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="infantil">
+                <img src="assets/themes/Image-1.png" alt="imagem de decoracao de aniversario">
+                <span>Infantil</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="formatura">
+                <img src="assets/themes/Image-2.png" alt="imagem de capelo">
+                <span>Formatura</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="casamento">
+                <img src="assets/themes/Image-3.png" alt="imagem de alianca">
+                <span>Casamento</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="cha de bebe">
+                <img src="assets/themes/Image-4.png" alt="imagem de uma flor e sabonete">
+                <span>Chá de bebê</span>
+              </div>
+              
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="cha de panela">
+                <img src="assets/themes/Image-5.png" alt="imagem de cozinha">
+                <span>Chá de panela</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="carnaval">
+                <img src="assets/themes/Image-6.png" alt="imagem de confete">
+                <span>Carnaval</span>
+              </div>
+              
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="pascoa">
+                <img src="assets/themes/Image-7.png" alt="imagem de ovo de pascoa">
+                <span>Páscoa</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="sao joao">
+                <img src="assets/themes/Image-8.png" alt="imagem de festa junina">
+                <span>São João</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="halloween">
+                <img src="assets/themes/Image-9.png" alt="imagem de Halloween">
+                <span>Halloween</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="natal">
+                <img src="assets/themes/Image-10.png" alt="imagem de presente de Natal">
+                <span>Natal</span>
+              </div>
+
+              <div class="select">
+                <input type="radio" name="theme" id="theme" value="outro">
+                <img src="assets/themes/Image-11.png" alt="imagem de pessoas brindando">
+                <span>Outro</span>
+              </div>
+          </div>
+
+          <div class="grid visual-settings">
+            <div class="input-wrapper">
+              <label for="mode">
+                Estilo
+              </label>
+
+              <div class="flex">
+              <div class="select">
+                <input type="checkbox" name="mode" id="mode">
+                <span></span>
+              </div>
+
+              <span class="text">Escuro</span>
+              </div>
+            </div>
+
+            <div class="input-wrapper">
+              <label for="upload">Foto de capa</label>
+              <div class="flex">
+                <div class="upload">
+                  <input type="file" required>
+                  <img src="assets/icons/upload.svg" alt="icone de upload">
+                  <span>Selecionar</span>
+                </div>
+
+                <span class="text-pl">
+                  Nenhum arquivo selecionado
+                </span>
+              </div>
+             
+            </div>
+          </div>
         </fieldset>
+
+
+        <fieldset id="contact">
+          <legend>
+            <img src="assets/icons/contact.svg" alt="imagem de avatar">
+            Dados para contato
+          </legend>
+
+
+          <div class="input-wrapper">
+            <label for="name">
+              Nome
+            </label>
+
+            <input type="text" name="name" id="name" required placeholder="Nome Completo">
+            <div class="error">
+              <img src="assets/icons/error.svg" alt="icone de alerta">
+              <span>Campo obrigatório </span>
+            </div>
+          </div>
+
+          <div class="grid grid-2-columns gap-16">
+            <div class="input-wrapper">
+              <label for="mail">E-mail</label>
+              <input type="email" name="mail" id="mail" placeholder="exemplo@email.com">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="tel">Telefone</label>
+              <input type="text" name="tel" id="tel" placeholder="(99) 99999-9999">
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="grid mg-top-40 gap-4">
+          <div class="terms">
+          <input type="checkbox">
+          <span></span>
+          <p>Li e concordo com os <strong> Termos e Condições </strong> e com a <strong> Política de Privacidade </strong></p>
+          </div>
+          <div class="terms">
+            <input type="checkbox">
+            <span></span>
+            <p>Aceito receber atualizações e promoções por e-mail</p>
+          </div>
+          <div class="terms">
+            <input type="checkbox">
+            <span></span>
+            <p>Aceito receber atualizações e promoções por SMS</p>
+          </div>
+        </div>
+
+        <button>
+          <img src="assets/icons/ticket.svg" alt="">
+          Gerar convite
+        </button>
 
 
       </form>
