@@ -54,7 +54,7 @@ body{
 
   & main {
     background-color: var(--shape-body);
-    padding-block: 5rem;
+    padding-top: 5rem;
     border-radius: .75rem;
     overflow: auto;
 
@@ -63,6 +63,7 @@ body{
      display: grid;
      margin-inline: auto;
      gap: 2.5rem;
+     padding-bottom: 5rem;
 
 
      & h2 {
