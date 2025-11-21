@@ -62,7 +62,6 @@ body{
 
     & .content {
      width: 35rem;
-     margin-inline: auto;
      display: grid;
      gap: 2.5rem;
 
