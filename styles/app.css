@@ -63,7 +63,7 @@ body{
      display: grid;
      margin-inline: auto;
      gap: 2.5rem;
-     padding-bottom: 5rem;
+    
 
 
      & h2 {

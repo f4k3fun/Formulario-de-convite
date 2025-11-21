@@ -65,5 +65,6 @@ form {
     color: var(--text-heading);
     margin-left: auto;
     margin-top: 3rem;
+    margin-bottom: 5rem;
   }
 }
