@@ -2,4 +2,4 @@
 
 Pré-visualização do projeto:
 
-![Preview do formulário](ativos/formulario-preview.png)
+![Preview do formulário](formulario-de-convite.png)
